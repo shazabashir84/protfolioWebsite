@@ -1,0 +1,528 @@
+@import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Story+Script&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.one {
+  background-image: url(../images/background.jpeg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.one .oneLayer {
+  background-color: rgba(0, 0, 0, 0.727);
+  height: 100vh;
+}
+.one .oneLayer .logo {
+  padding: 18px 0;
+}
+.one .oneLayer .logo h3 a {
+  font-family: "Roboto", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(255, 48, 91);
+  text-decoration: none;
+}
+.one .oneLayer .navbar-toggler:hover,
+.one .oneLayer .navbar-toggler:active,
+.one .oneLayer .navbar-toggler:focus {
+  border-color: #dc3545;
+  outline: none;
+  box-shadow: none;
+}
+.one .oneLayer .navLinks {
+  padding: 20px 0;
+}
+.one .oneLayer .navLinks li {
+  text-decoration: none;
+  list-style: none;
+}
+.one .oneLayer .navLinks li a {
+  text-decoration: none;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+.one .oneLayer .navLinks li a:hover, .one .oneLayer .navLinks li a:active {
+  color: rgb(255, 48, 91);
+  font-weight: 300;
+  transition: all 1s ease-in-out;
+}
+.one .oneLayer .navbar-collapse {
+  text-align: center;
+}
+.one .oneLayer .oneContent {
+  height: 80vh;
+}
+.one .oneLayer .oneContent .wrapper .static-txt h3 {
+  font-size: 24px;
+  font-family: "Source Sans 3", sans-serif;
+  color: white;
+  margin: 0 0 10px;
+}
+.one .oneLayer .oneContent .wrapper .static-txt h1 {
+  font-size: 70px;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  color: rgb(255, 48, 91);
+  font-weight: bold;
+}
+.one .oneLayer .oneContent .wrapper .typewritter h4 {
+  font-size: 60px;
+  font-family: "Source Sans 3", sans-serif;
+  color: white;
+  margin: 0;
+  text-transform: capitalize;
+}
+.one .oneLayer .oneContent .wrapper .typewritter ul {
+  list-style: none;
+  height: 90px;
+  font-size: 60px;
+  color: #ff305b;
+  overflow: hidden;
+}
+.one .oneLayer .oneContent .wrapper .typewritter ul li {
+  position: relative;
+  top: 0;
+  width: 0;
+  border-right: 1px solid #ff305b;
+  overflow: hidden;
+  animation: slide 18s steps(3) infinite, typing 3s steps(10) infinite;
+  white-space: nowrap;
+}
+@keyframes slide {
+  100% {
+    top: -270px;
+  }
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  40% {
+    width: 100%;
+  }
+  60% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+@media (max-width: 768px) {
+  .one .oneLayer .oneContent .wrapper h4 {
+    font-size: 32px;
+  }
+  .one .oneLayer .oneContent .wrapper ul {
+    height: 48px;
+    font-size: 32px;
+  }
+}
+@media (max-width: 480px) {
+  .one .oneLayer .oneContent .wrapper h4 {
+    font-size: 22px;
+  }
+  .one .oneLayer .oneContent .wrapper ul {
+    height: 32px;
+    font-size: 22px;
+  }
+}
+
+.two {
+  padding: 80px 0;
+}
+.two .imgSection {
+  position: relative;
+  width: 420px;
+  height: 420px;
+}
+.two .imgSection .imgBorder {
+  height: 420px;
+  width: 420px;
+  border: solid 5px #333;
+  border-radius: 10px;
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  z-index: 1;
+}
+.two .imgSection img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  z-index: 2;
+}
+.two .imgSection .coverImg {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition: height 1s;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.two .imgSection .coverImg i {
+  color: white;
+  font-size: 20px;
+}
+.two .imgSection .coverImg i:hover {
+  color: rgb(255, 48, 91);
+  transition: all 0.5s ease-in-out;
+}
+.two .imgSection:hover .coverImg {
+  height: 100%;
+}
+.two .InfoSection {
+  padding: 0 0 0 28px;
+}
+.two .InfoSection h2 {
+  font-family: "Source Sans 3", sans-serif;
+  color: #333;
+  font-size: 34px;
+  padding: 0 0 20px;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+}
+.two .InfoSection h2 span {
+  color: rgb(255, 48, 91);
+}
+.two .InfoSection p {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+  position: relative;
+  margin-bottom: 32px;
+}
+.two .InfoSection p::after {
+  content: "";
+  display: block;
+  width: 95%;
+  height: 1px;
+  background: #555;
+  margin: 16px 0 0 0;
+  opacity: 0.3;
+}
+.two .InfoSection .lists ul {
+  list-style: none;
+}
+.two .InfoSection .lists ul li {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  font-size: 16px;
+}
+.two .InfoSection .lists ul li span {
+  color: #333;
+  font-weight: bold;
+}
+.two .InfoSection .lists button {
+  background-color: rgb(255, 48, 91);
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  padding: 10px 24px;
+  border-radius: 5px;
+  border: none;
+  margin: 0 10px 0 0;
+  cursor: pointer;
+}
+.two .InfoSection .lists button:hover {
+  background-color: rgb(252, 0, 52.347826087);
+  transition: all 0.5s ease-in-out;
+}
+
+.three {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+.three .threeHeader {
+  margin: 0 0 40px;
+  padding: 0 0 30px;
+}
+.three .threeHeader h2 {
+  font-family: "Source Sans 3", sans-serif;
+  color: #333;
+  font-size: 40px;
+  font-weight: 800;
+}
+.three .threeHeader hr {
+  border: none;
+  height: 0.5px;
+  background-color: #ff305b;
+  margin: 5px 0;
+}
+.three .card {
+  padding: 40px 15px;
+  border-radius: 3px;
+}
+.three .card .card-body i {
+  color: rgb(255, 48, 91);
+  font-size: 36px;
+  margin: 0 0 20px;
+}
+.three .card .card-body h3 {
+  font-family: "Source Sans 3", sans-serif;
+  color: "Source Sans 3", sans-serif;
+  font-size: 24px;
+  margin: 0 0 15px;
+}
+.three .card .card-body p {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  font-size: 16px;
+}
+.three .card:hover {
+  background-color: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+}
+.three .card:hover i {
+  font-size: 40px;
+  transition: all 0.5s ease-in-out;
+}
+
+.four {
+  padding: 80px 0;
+}
+.four .fourHeader {
+  margin: 0 0 40px;
+}
+.four .fourHeader h2 {
+  font-family: "Source Sans 3", sans-serif;
+  color: #333;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+.four .fourHeader hr {
+  border: none;
+  height: 0.5px;
+  background-color: #ff305b;
+  margin: 5px 0;
+}
+.four .fourHeader .buttonSection {
+  margin: 0 0 40px;
+  text-align: center;
+}
+.four .fourHeader .buttonSection ul {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  list-style: none;
+}
+.four .fourHeader .buttonSection ul:hover {
+  color: rgb(255, 48, 91);
+  transition: all 0.5s ease-in-out;
+}
+.four .gallery .imageCont {
+  position: relative;
+}
+.four .gallery .imageCont img {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+.four .gallery .imageCont .imgCover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #333;
+  opacity: 0;
+  z-index: 333;
+  padding: 15px;
+}
+.four .gallery .imageCont .imgCover i {
+  color: rgb(255, 48, 91);
+}
+.four .gallery .imageCont:hover .imgCover {
+  opacity: 0.7;
+  transition: all 0.5s ease-in-out;
+}
+
+.five {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+  font-family: "Source Sans 3", sans-serif;
+}
+.five .counter {
+  padding: 0 15px;
+}
+.five .counter i {
+  color: rgb(255, 48, 91);
+  font-size: 26px;
+  margin: 0 0 15px;
+}
+.five .counter h3 {
+  font-size: 26px;
+  margin: 0 0 10px;
+  color: #333;
+  font-weight: 800;
+}
+.five .counter h5 {
+  font-size: 16px;
+  color: #555;
+  text-transform: capitalize;
+}
+.five .counter:hover {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.six {
+  padding: 80px 0;
+}
+.six .sixHeader {
+  margin: 0 0 40px;
+  padding: 0 0 30px;
+}
+.six .sixHeader h3 {
+  font-family: "Source Sans 3", sans-serif;
+  color: #333;
+  font-size: 40px;
+  font-weight: 800;
+  text-align: center;
+}
+.six .sixHeader hr {
+  border: none;
+  height: 0.5px;
+  background-color: #ff305b;
+  margin: 5px 0;
+}
+.six .carouselSection .carousel-item .rectangle-background {
+  position: relative;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.six .carouselSection .carousel-item .rectangle-background .rectangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 2;
+  border-width: 0 0 150px 160px;
+  border-color: transparent transparent transparent #ff305b;
+  border-radius: 5px;
+}
+.six .carouselSection .carousel-item .rectangle-background .content {
+  position: relative;
+  z-index: 3;
+}
+.six .carouselSection .carousel-item .rectangle-background .content .imgCounter img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  margin: 30px;
+}
+.six .carouselSection .carousel-item .rectangle-background .content h3 {
+  font-family: "Source Sans 3", sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin: 15px 0 10px;
+}
+
+.seven {
+  padding: 80px 0;
+  background-color: #f9f9f9;
+}
+.seven .card .card-body {
+  padding: 0;
+}
+.seven .card .card-body img {
+  width: 100%;
+  height: auto;
+}
+.seven .card .card-body .cardText {
+  padding: 20px;
+}
+.seven .card .card-body .cardText h5 {
+  font-family: "Source Sans 3", sans-serif;
+  color: #333;
+  font-size: 16px;
+  margin: 0 0 10px;
+  text-transform: uppercase;
+}
+.seven .card .card-body .cardText h3 {
+  font-family: "Source Sans 3", sans-serif;
+  color: #333;
+  font-size: 24px;
+  margin: 0 0 15px;
+  text-transform: capitalize;
+}
+.seven .card .card-body .cardText p {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.8;
+}
+.seven .card .card-body .cardText a {
+  font-family: "Roboto", sans-serif;
+  color: #555;
+}
+.seven .card .card-body .cardText a:hover {
+  color: rgb(255, 48, 91);
+  transition: color 0.5s ease-in-out;
+}
+
+.eight {
+  padding: 80px 0;
+}
+.eight .eightHeader {
+  margin-bottom: 0 0 30px;
+}
+.eight .eightHeader h2 {
+  font-family: "Source Sans 3", sans-serif;
+  font-size: 40px;
+  font-weight: 800;
+  color: #333;
+}
+.eight .eightHeader hr {
+  border: none;
+  height: 0.5px;
+  background-color: #ff305b;
+  margin: 5px 0;
+}
+.eight form button {
+  border-radius: 5px;
+  padding: 10px 24px;
+  margin: 0 10px 0 0;
+  background-color: rgb(255, 48, 91);
+  color: white;
+  font-size: 16px;
+}
+.eight form button:hover {
+  background-color: transparent;
+  color: rgb(255, 48, 91);
+  border: rgb(255, 48, 91) solid 1px;
+  cursor: pointer;
+  transition: all 0.7s ease-in-out;
+}
+
+.nine {
+  background-color: #333;
+  padding: 50px 0;
+  color: white;
+}
+.nine i:hover, .nine p span:hover {
+  color: rgb(255, 48, 91);
+  cursor: pointer;
+  transition: 1s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
