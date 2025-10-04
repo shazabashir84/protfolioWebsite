@@ -482,12 +482,14 @@ $button-margin: 0 10px 0 0;
                 background-color: #333;
                 opacity: 0;
                 z-index: 333;
-                padding:15px;
-                i{
+                padding: 15px;
+
+                i {
                     color: $color-red;
                 }
 
             }
+
             &:hover .imgCover {
                 opacity: 0.7;
                 transition: all 0.5s ease-in-out;
@@ -499,55 +501,63 @@ $button-margin: 0 10px 0 0;
 
 }
 
-.five{
-    padding:$padding-cont ;
-    background-color:#f9f9f9 ;
+.five {
+    padding: $padding-cont ;
+    background-color: #f9f9f9;
     font-family: $font-header;
-    .counter{
+
+    .counter {
         padding: 0 15px;
-        i{
+
+        i {
             color: $color-red;
             font-size: 26px;
             margin: 0 0 15px;
         }
-        h3{
-                    
+
+        h3 {
+
             font-size: 26px;
             margin: 0 0 10px;
-            color:$color-header ;
+            color: $color-header ;
             font-weight: 800;
-           // counter
+            // counter
             // Define a custom property --num to hold the number value.
         }
-        h5{
+
+        h5 {
             font-size: 16px;
-            color:$color-para ;
+            color: $color-para ;
             text-transform: capitalize;
         }
-        &:hover{
-           box-shadow: 5px 5px 15px rgba(0,0,0,0.1);
-           border-radius: 10px;
-           background-color: white;
+
+        &:hover {
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-color: white;
             transition: all 0.5s ease-in-out;
 
+        }
     }
 }
-}
 
-.six{
+.six {
     padding: $padding-cont;
-    .sixHeader{
+
+    .sixHeader {
         margin: 0 0 40px;
         padding: 0 0 30px;
-        h3{
+
+        h3 {
             font-family: $font-header;
             color: $color-header;
             font-size: 40px;
             font-weight: 800;
             text-align: center;
-        
+
         }
-        hr{
+
+        hr {
             border: none;
             height: 0.5px;
             background-color: #ff305b;
@@ -555,86 +565,116 @@ $button-margin: 0 10px 0 0;
         }
     }
 
-    .carouselSection{
-        .carousel-item{
-            .rectangle-background{
-                position: relative;
-                border-radius: 15px;
-                background-color: #f9f9f9;
-                width: fit-content;
-                .rectangle{
-                position: absolute;
-                width: 0;
-                height: 0;
-                border-style: solid;
-                z-index: 2;
-                border-width: 0 0 150px 160px;
-                border-color: transparent transparent transparent #ff305b;
-                border-radius: 5px;
+    .crouselSection {
 
+        .cardSix {
+            background-color: #f9f9f9;
+            border-radius: 10px;
+            padding: 15px;
+
+            .triangle {
+                .imgCont {
+                    padding: 15px;
+                    img {
+                        width: 100%;
+                        border-radius: 50%;
+
+                    }
                 }
-                .content{
-                    position: relative;
-                    z-index: 3;
-                    .imgCounter{
-                        img{
-                            width: 100%;
-                            height: auto;
-                            border-radius: 50%;
-                            margin:30px;
-                        }
-                    }
-                    h3{
-                        font-family: $font-header;
-                        color: $color-header;
-                        font-size: 24px;
-                        margin: 15px 0 10px;
-                    }
             }
+
+
         }
     }
-}
+
+    // .crouselSection {
+    //     .cardSix {
+    //         background-color: #f9f9f9;
+    //         position: relative;
+    //         z-index: 1;
+    //         // padding: 15px;
+
+    //         .triangle {
+    //             position: absolute;
+    //             width: 0;
+    //             height: 0;
+    //             border-style: solid;
+    //             z-index: 2;
+    //             border-width: 0 0 150px 160px;
+    //             border-color: transparent transparent transparent #ff305b;
+    //             border-radius: 5px;
+    //         }
+    //     //      .imgCont {
+    //     //     position: static; // Remove absolute so it stacks naturally
+    //     //     z-index: 3;
+    //     //     img {
+    //     //         border-radius: 50%;
+    //     //         width: 120px; // Example size
+    //     //         height: 120px;
+    //     //         object-fit: cover;
+    //     //     }
+    //     // }
+    //         // .imgCont {
+    //         //                         position: absolute;
+    //         //         z-index: 3;
+
+    //         //     img {
+    //         //         border-radius: 50%;
+
+    //         //     }
+    //         // }
+    //     }
+    // }
+
 }
 
 
-.seven{
+.seven {
     padding: $padding-cont;
     background-color: #f9f9f9;
-    .card{
-        .card-body{
-            padding:0;
-            img{
+
+    .card {
+        .card-body {
+            padding: 0;
+
+            img {
                 width: 100%;
                 height: auto;
                 // border-radius: 10px 10px 0 0 ;
             }
-            .cardText{
+
+            .cardText {
                 padding: 20px;
-                h5{
+
+                h5 {
                     font-family: $font-header;
                     color: $color-header;
                     font-size: 16px;
                     margin: 0 0 10px;
                     text-transform: uppercase;
                 }
-                h3{
+
+                h3 {
                     font-family: $font-header;
                     color: $color-header;
                     font-size: 24px;
                     margin: 0 0 15px;
                     text-transform: capitalize;
                 }
-                p{
+
+                p {
                     font-family: $font-para;
                     color: $color-para;
                     font-size: 16px;
                     line-height: 1.8;
                 }
-                a{
+
+                a {
                     font-family: $font-para;
                     color: $color-para;
-                    &:hover{
-                        color:$color-red;
+
+                    &:hover {
+                        color: $color-red;
                         transition: color 0.5s ease-in-out;
                     }
                 }
@@ -644,16 +684,19 @@ $button-margin: 0 10px 0 0;
     }
 }
 
-.eight{
+.eight {
     padding: $padding-cont;
-    .eightHeader{
-        margin-bottom:0 0 30px;
-       h2{
-        font-family: $font-header;
-        font-size:40px;
-        font-weight: 800;
-        color:$color-header;
-       } 
+
+    .eightHeader {
+        margin-bottom: 0 0 30px;
+
+        h2 {
+            font-family: $font-header;
+            font-size: 40px;
+            font-weight: 800;
+            color: $color-header;
+        }
+
         hr {
             border: none;
             height: 0.5px;
@@ -662,40 +705,45 @@ $button-margin: 0 10px 0 0;
 
         }
     }
-    form{
-        button{
+
+    form {
+        button {
             border-radius: $button-border-radius;
             padding: $button-padding;
-            margin:$button-margin;
+            margin: $button-margin;
             background-color: $color-red;
-            color:white;
+            color: white;
             font-size: 16px;
         }
-                    button:hover{
-                background-color: transparent;
-                color:$color-red;
-                border:$color-red solid 1px;
-                cursor: pointer;
-                transition: all 0.7s ease-in-out;
-            }
+
+        button:hover {
+            background-color: transparent;
+            color: $color-red;
+            border: $color-red solid 1px;
+            cursor: pointer;
+            transition: all 0.7s ease-in-out;
+        }
 
     }
 
 }
 
-.nine{
+.nine {
     background-color: #333;
-    padding:50px 0;
-    color:white;
-    i ,p span{
-        
-        &:hover{
-            color:$color-red;
+    padding: 50px 0;
+    color: white;
+
+    i,
+    p span {
+
+        &:hover {
+            color: $color-red;
             cursor: pointer;
             transition: 1s ease-in-out;
         }
     }
 }
+
 // responsive
 //  @media screen and (max-width: 990px) {
 //     .two{

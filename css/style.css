@@ -405,38 +405,17 @@ body {
   background-color: #ff305b;
   margin: 5px 0;
 }
-.six .carouselSection .carousel-item .rectangle-background {
-  position: relative;
-  border-radius: 15px;
+.six .crouselSection .cardSix {
   background-color: #f9f9f9;
-  width: -moz-fit-content;
-  width: fit-content;
+  border-radius: 10px;
+  padding: 15px;
 }
-.six .carouselSection .carousel-item .rectangle-background .rectangle {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  z-index: 2;
-  border-width: 0 0 150px 160px;
-  border-color: transparent transparent transparent #ff305b;
-  border-radius: 5px;
+.six .crouselSection .cardSix .triangle .imgCont {
+  padding: 15px;
 }
-.six .carouselSection .carousel-item .rectangle-background .content {
-  position: relative;
-  z-index: 3;
-}
-.six .carouselSection .carousel-item .rectangle-background .content .imgCounter img {
+.six .crouselSection .cardSix .triangle .imgCont img {
   width: 100%;
-  height: auto;
   border-radius: 50%;
-  margin: 30px;
-}
-.six .carouselSection .carousel-item .rectangle-background .content h3 {
-  font-family: "Source Sans 3", sans-serif;
-  color: #333;
-  font-size: 24px;
-  margin: 15px 0 10px;
 }
 
 .seven {
@@ -521,7 +500,8 @@ body {
   padding: 50px 0;
   color: white;
 }
-.nine i:hover, .nine p span:hover {
+.nine i:hover,
+.nine p span:hover {
   color: rgb(255, 48, 91);
   cursor: pointer;
   transition: 1s ease-in-out;
