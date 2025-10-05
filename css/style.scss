@@ -118,88 +118,100 @@ $button-margin: 0 10px 0 0;
                     }
 
                 }
-
-                .typewritter {
-                    h4 {
-                        font-size: 60px;
-                        font-family: $font-header;
-                        color: white;
-                        margin: 0;
-                        text-transform: capitalize;
-                    }
-
-                    ul {
-                        list-style: none;
-                        height: 90px;
-                        font-size: 60px;
-                        color: #ff305b;
-                        overflow: hidden;
-                    }
-
-                    ul li {
-                        position: relative;
-                        top: 0;
-                        width: 0; // Start hidden
-                        border-right: 1px solid #ff305b; // Cursor effect
-                        overflow: hidden;
-                        animation: slide 18s steps(3) infinite, typing 3s steps(10) infinite;
-                        white-space: nowrap;
-                    }
-
-                    @keyframes slide {
-                        100% {
-                            top: -270px;
+                .typewritter{
+                    // background-color: white;
+                    .content{
+                        h4{
+                            font-size: 26px;
+                            text-transform: capitalize;
+                            color: #fff;
+                            font-weight: 100;
+                            
                         }
                     }
 
-                    @keyframes typing {
-                        0% {
-                            width: 0;
-                        }
-
-                        40% {
-                            width: 100%;
-                        }
-
-                        60% {
-                            width: 100%;
-                        }
-
-                        100% {
-                            width: 0;
-                        }
-                    }
                 }
+                // .typewritter {
+                //     h4 {
+                //         font-size: 60px;
+                //         font-family: $font-header;
+                //         color: white;
+                //         margin: 0;
+                //         text-transform: capitalize;
+                //     }
 
-                // responsive
-                @media (max-width: 768px) {
-                    h4 {
-                        font-size: 32px;
-                    }
+                //     ul {
+                //         list-style: none;
+                //         height: 90px;
+                //         font-size: 60px;
+                //         color: #ff305b;
+                //         overflow: hidden;
+                //     }
 
-                    ul {
-                        height: 48px;
-                        font-size: 32px;
-                    }
-                }
+                //     ul li {
+                //         position: relative;
+                //         top: 0;
+                //         width: 0; // Start hidden
+                //         border-right: 1px solid #ff305b; // Cursor effect
+                //         overflow: hidden;
+                //         animation: slide 18s steps(3) infinite, typing 3s steps(10) infinite;
+                //         white-space: nowrap;
+                //     }
 
-                @media (max-width: 480px) {
-                    h4 {
-                        font-size: 22px;
-                    }
+                //     @keyframes slide {
+                //         100% {
+                //             top: -270px;
+                //         }
+                //     }
 
-                    ul {
-                        height: 32px;
-                        font-size: 22px;
-                    }
-                }
+                //     @keyframes typing {
+                //         0% {
+                //             width: 0;
+                //         }
 
+                //         40% {
+                //             width: 100%;
+                //         }
 
+                //         60% {
+                //             width: 100%;
+                //         }
 
+                //         100% {
+                //             width: 0;
+                //         }
+                //     }
+                // }
+
+                // // responsive
+                // @media (max-width: 768px) {
+                //     h4 {
+                //         font-size: 32px;
+                //     }
+
+                //     ul {
+                //         height: 48px;
+                //         font-size: 32px;
+                //     }
+                // }
+
+                // @media (max-width: 480px) {
+                //     h4 {
+                //         font-size: 22px;
+                //     }
+
+                // ul {
+                //     height: 32px;
+                //     font-size: 22px;
+                // }
             }
+
+
+
         }
     }
 }
+
 
 .two {
     padding: $padding-cont;
@@ -575,6 +587,7 @@ $button-margin: 0 10px 0 0;
             .triangle {
                 .imgCont {
                     padding: 15px;
+
                     img {
                         width: 100%;
                         border-radius: 50%;

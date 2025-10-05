@@ -1,3 +1,13 @@
+// auto typing
+
+var typed= new Typed(".auto-type", {
+    strings:['Designer', 'Developer', 'Freelancer'],
+    typeSpeed:100,
+    backSpeed:100,
+    loop:true
+})
+
+// couting
 function animateCounter(selector, end, duration) {
     const el = document.querySelector(selector);
     let start = 0;

@@ -71,65 +71,11 @@ body {
   color: rgb(255, 48, 91);
   font-weight: bold;
 }
-.one .oneLayer .oneContent .wrapper .typewritter h4 {
-  font-size: 60px;
-  font-family: "Source Sans 3", sans-serif;
-  color: white;
-  margin: 0;
+.one .oneLayer .oneContent .wrapper .typewritter .content h4 {
+  font-size: 26px;
   text-transform: capitalize;
-}
-.one .oneLayer .oneContent .wrapper .typewritter ul {
-  list-style: none;
-  height: 90px;
-  font-size: 60px;
-  color: #ff305b;
-  overflow: hidden;
-}
-.one .oneLayer .oneContent .wrapper .typewritter ul li {
-  position: relative;
-  top: 0;
-  width: 0;
-  border-right: 1px solid #ff305b;
-  overflow: hidden;
-  animation: slide 18s steps(3) infinite, typing 3s steps(10) infinite;
-  white-space: nowrap;
-}
-@keyframes slide {
-  100% {
-    top: -270px;
-  }
-}
-@keyframes typing {
-  0% {
-    width: 0;
-  }
-  40% {
-    width: 100%;
-  }
-  60% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
-}
-@media (max-width: 768px) {
-  .one .oneLayer .oneContent .wrapper h4 {
-    font-size: 32px;
-  }
-  .one .oneLayer .oneContent .wrapper ul {
-    height: 48px;
-    font-size: 32px;
-  }
-}
-@media (max-width: 480px) {
-  .one .oneLayer .oneContent .wrapper h4 {
-    font-size: 22px;
-  }
-  .one .oneLayer .oneContent .wrapper ul {
-    height: 32px;
-    font-size: 22px;
-  }
+  color: #fff;
+  font-weight: 100;
 }
 
 .two {
