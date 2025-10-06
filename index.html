@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
     <link rel="icon" href="images/happy.png">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -229,22 +230,22 @@
     <section class="four" id="protfolio">
         <div class="container">
             <div class="row g-3">
-                <div class="col-lg-12">
-                    <div class="fourHeader">
+                <div class="col-lg-12 fourHeader">
+                    <div class="">
                         <h2>Portfolio</h2>
                         <hr width="5%" size="1" class="mx-auto">
                         <hr width="10%" size="1" class="mx-auto">
                         <hr width="5%" size="1" class="mx-auto">
                     </div>
-                    <ul class="buttonSection d-flex justify-content-center align-items-center">
-                        <li class="btn me-3">All</li>
-                        <li class="btn me-3">Web Design</li>
-                        <li class="btn me-3">App Design</li>
-                        <li class="btn me-3">Graphic Design</li>
-                    </ul>
+                    <div class="filter-buttons d-flex justify-content-center align-items-center">
+                        <button class="btn me-3 filter-btn active" data-filter="all">All</button>
+                        <button class="btn me-3 filter-btn" data-filter="web">Web Design</button>
+                        <button class="btn me-3 filter-btn" data-filter="app">App Design</button>
+                        <button class="btn me-3 filter-btn" data-filter="design">Graphic Design</button>
+                    </div>
 
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 gallery">
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery web">
                     <div class="imageCont">
                         <div class="imgCover d-flex justify-content-end align-items-end">
                             <i class="fa-solid fa-link"></i>
@@ -253,7 +254,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 gallery">
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery web">
                     <div class="imageCont">
                         <div class="imgCover d-flex justify-content-end align-items-end">
                             <i class="fa-solid fa-link"></i>
@@ -262,7 +263,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 gallery">
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery app">
                     <div class="imageCont">
                         <div class="imgCover d-flex justify-content-end align-items-end">
                             <i class="fa-solid fa-link"></i>
@@ -272,7 +273,7 @@
                     </div>
                 </div>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 gallery">
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery app">
                     <div class="imageCont">
                         <div class="imgCover d-flex justify-content-end align-items-end">
                             <i class="fa-solid fa-link"></i>
@@ -281,7 +282,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 gallery">
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery design">
                     <div class="imageCont">
                         <div class="imgCover d-flex justify-content-end align-items-end">
                             <i class="fa-solid fa-link"></i>
@@ -290,7 +291,7 @@
 
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12 gallery">
+                <div class="col-lg-4 col-md-6 col-sm-12 gallery design">
                     <div class="imageCont">
                         <div class="imgCover d-flex justify-content-end align-items-end">
                             <i class="fa-solid fa-link"></i>
@@ -341,7 +342,6 @@
 
 
     <section>
-
         <div class="container six" id="testimonial">
             <div class="row">
                 <div class="col-md-12 sixHeader">
@@ -356,125 +356,65 @@
 
 
 
-                <div class="col-md-12">
 
-                    <div id="carouselExampleIndicators" class="carousel slide">
-                        <div class="carousel-indicators ">
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
-                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                                aria-label="Slide 3"></button>
-                        </div>
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="crouselSection d-flex justify-content-center">
-                                    <div class="cardSix w-50">
-                                        <div class="triangle">
-                                            <div class="d-flex">
-                                                <div class="imgCont  my-auto">
-                                                    <img src="./images/2.1.jpg" alt="">
-                                                </div>
-                                                <div class="cardContent ">
-                                                    <h3>Alex Ander</h3>
-                                                    <i></i>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                        Exercitationem ducimus
-                                                        ex magni sunt, architecto vel dolore,
-                                                        laudantium dignissimos debitis optio! Exercitationem adipisicing
-                                                        elit.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                <div class="col-md-6 mx-auto">
+                    <div class="carouselSix swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="carouselItems swiper-wrapper">
+                            <!-- Slides -->
+                            <div class=" cardSix  swiper-slide  d-flex justify-content-center align-items-center ">
+                                <div class="triangle "></div>
+                                <div class="card-image"><img src="./images/2.1.jpg" alt="" class=""></div>
+                                <div class="cardBody">
+                                    <h3 class="cardTitle">alex ander</h3>
+                                    <i class="fa-solid fa-location-dot location"></i>
+                                    <p class="cardTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        nobis ex tempora minus ipsa incidunt.</p>
 
-                            </div>
-                            <div class="carousel-item">
-                                <div class="crouselSection d-flex justify-content-center">
-                                    <div class="cardSix w-50">
-                                        <div class="triangle">
-                                            <div class="d-flex">
-                                                <div class="imgCont  my-auto">
-                                                    <img src="./images/2.1.jpg" alt="">
-                                                </div>
-                                                <div class="cardContent ">
-                                                    <h3>Alex Ander</h3>
-                                                    <i></i>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                        Exercitationem ducimus
-                                                        ex magni sunt, architecto vel dolore,
-                                                        laudantium dignissimos debitis optio! Exercitationem adipisicing
-                                                        elit.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="crouselSection d-flex justify-content-center">
-                                    <div class="cardSix w-50">
-                                        <div class="triangle">
-                                            <div class="d-flex">
-                                                <div class="imgCont  my-auto">
-                                                    <img src="./images/2.1.jpg" alt="">
-                                                </div>
-                                                <div class="cardContent ">
-                                                    <h3>Alex Ander</h3>
-                                                    <i></i>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                                                        Exercitationem ducimus
-                                                        ex magni sunt, architecto vel dolore,
-                                                        laudantium dignissimos debitis optio! Exercitationem adipisicing
-                                                        elit.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                            <div class=" cardSix swiper-slide  d-flex justify-content-center align-items-center ">
+                                <div class="triangle "></div>
+                                <div class="card-image"><img src="./images/2.1.jpg" alt="" class=""></div>
+                                <div class="cardBody">
+                                    <h3 class="cardTitle">alex ander</h3>
+                                    <i class="fa-solid fa-location-dot location"></i>
+                                    <p class="cardTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        nobis ex tempora minus ipsa incidunt.</p>
+
                                 </div>
                             </div>
+
+
+                            <div class=" cardSix swiper-slide  d-flex justify-content-center align-items-center ">
+                                <div class="triangle "></div>
+                                <div class="card-image"><img src="./images/2.2.jpg" alt="" class=""></div>
+                                <div class="cardBody">
+                                    <h3 class="cardTitle">Max ander</h3>
+                                    <i class="fa-solid fa-location-dot location"></i>
+                                    <p class="cardTxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                                        nobis ex tempora minus ipsa incidunt.</p>
+
+                                </div>
+                            </div>
+
+                            <!-- <div class="swiper-slide">Slide 2</div>
+                            <div class="swiper-slide">Slide 3</div> -->
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                            data-bs-slide="next">
-                            <span class=" p-1 bg-secondary rounded-end-circle" aria-hidden="true"><i class="fa-solid fa-chevron-right "></i></span>
-                            <span class="visually-hidden p-1 bg-secondary rounded-end-circl">Next</span>
-                        </button>
+                        <!-- If we need pagination -->
+                        <div class="swiper-pagination swiper-pagination-bullets"></div>
+
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+
                     </div>
 
-                    <!-- <div class="crouselSection d-flex justify-content-center" >
-                        <div class="cardSix w-50">
-                            <div class="triangle">
-                            <div class="d-flex">
-                                <div class="imgCont  my-auto">
-                                    <img src="./images/2.1.jpg" alt="">
-                                </div>
-                                <div class="cardContent ">
-                                    <h3>Alex Ander</h3>
-                                    <i></i>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ducimus
-                                        ex magni sunt, architecto vel dolore,
-                                        laudantium dignissimos debitis optio! Exercitationem adipisicing elit.</p>
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                    </div> -->
+
                 </div>
-
-                
-
-
             </div>
         </div>
-
-
     </section>
 
     <section class="seven" id="blog">
@@ -600,7 +540,8 @@
         </div>
     </section>
 
-        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 
     <script src="js/bootstrap.bundle.min.js"></script>
 

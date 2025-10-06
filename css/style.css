@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Courgette&family=Fjalla+One&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wdth,wght@0,75..100,100..900;1,75..100,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Story+Script&display=swap");
 html,
 body {
@@ -245,7 +246,7 @@ body {
   padding: 80px 0;
 }
 .four .fourHeader {
-  margin: 0 0 40px;
+  margin: 0 0 20px;
 }
 .four .fourHeader h2 {
   font-family: "Source Sans 3", sans-serif;
@@ -260,18 +261,27 @@ body {
   background-color: #ff305b;
   margin: 5px 0;
 }
-.four .fourHeader .buttonSection {
+.four .fourHeader .filter-buttons {
   margin: 0 0 40px;
   text-align: center;
+  margin: 10px 0 0 0;
 }
-.four .fourHeader .buttonSection ul {
+.four .fourHeader .filter-buttons button {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   list-style: none;
-}
-.four .fourHeader .buttonSection ul:hover {
-  color: rgb(255, 48, 91);
   transition: all 0.5s ease-in-out;
+  border-radius: 50px;
+}
+.four .fourHeader .filter-buttons button:hover {
+  color: white;
+  background: rgb(255, 48, 91);
+  opacity: 0.5;
+}
+.four .fourHeader .filter-buttons .active {
+  color: white;
+  background: rgb(255, 48, 91);
+  opacity: 0.5;
 }
 .four .gallery .imageCont {
   position: relative;
@@ -280,6 +290,7 @@ body {
   width: 100%;
   height: auto;
   position: relative;
+  border-radius: 15px;
 }
 .four .gallery .imageCont .imgCover {
   position: absolute;
@@ -291,6 +302,7 @@ body {
   opacity: 0;
   z-index: 333;
   padding: 15px;
+  border-radius: 15px;
 }
 .four .gallery .imageCont .imgCover i {
   color: rgb(255, 48, 91);
@@ -298,6 +310,9 @@ body {
 .four .gallery .imageCont:hover .imgCover {
   opacity: 0.7;
   transition: all 0.5s ease-in-out;
+}
+.four .hidden {
+  display: none;
 }
 
 .five {
@@ -351,17 +366,67 @@ body {
   background-color: #ff305b;
   margin: 5px 0;
 }
-.six .crouselSection .cardSix {
-  background-color: #f9f9f9;
-  border-radius: 10px;
-  padding: 15px;
+.six .swiper {
+  width: 600px;
+  height: 300px;
 }
-.six .crouselSection .cardSix .triangle .imgCont {
-  padding: 15px;
+.six .carouselSix .carouselItems .cardSix {
+  border-radius: 15px;
+  padding: 20px;
+  background: #f9f9f9;
+  border: rgba(220, 53, 70, 0.1411764706) solid 1px;
 }
-.six .crouselSection .cardSix .triangle .imgCont img {
+.six .carouselSix .carouselItems .cardSix .card-image {
+  margin: 0 20px;
+}
+.six .carouselSix .carouselItems .cardSix .card-image img {
   width: 100%;
   border-radius: 50%;
+}
+.six .carouselSix .carouselItems .cardSix .cardBody .cardTitle {
+  font-family: "Source Sans 3", sans-serif;
+  color: rgb(255, 48, 91);
+  text-transform: capitalize;
+  margin: 0 0 10px;
+  opacity: 0.7;
+}
+.six .carouselSix .carouselItems .cardSix .cardBody .location {
+  margin: 0 0 10px;
+  color: #555;
+}
+.six .carouselSix .carouselItems .cardSix .cardBody .cardTxt {
+  margin: 0 0 15px;
+  font-family: "Roboto", sans-serif;
+  color: #555;
+}
+.six .carouselSix .carouselItems .cardSix .cardBody .cardTxt::after {
+  content: " ★★★★★☆";
+  color: #ffcc00;
+  /* gold color for stars */
+  font-size: 1.2em;
+  margin-left: 8px;
+  display: block;
+}
+.six .carouselSix .carouselItems .cardSix:hover .cardTitle {
+  color: rgb(255, 48, 91);
+  font-size: 30px;
+  transition: all 2s ease;
+}
+.six .carouselSix .swiper-pagination-bullets {
+  color: rgb(255, 48, 91);
+  height: 13px;
+  width: 13px;
+  opacity: 0.5;
+}
+.six .carouselSix .swiper-pagination-bullet-active {
+  background: rgb(252, 0, 52.347826087);
+}
+.six .carouselSix .swiper-button-prev,
+.six .carouselSix .swiper-button-next {
+  color: rgb(255, 48, 91);
+  opacity: 0.5;
+  height: 25px;
+  width: 25px;
 }
 
 .seven {
@@ -391,6 +456,7 @@ body {
   font-size: 24px;
   margin: 0 0 15px;
   text-transform: capitalize;
+  transition: 0.5s;
 }
 .seven .card .card-body .cardText p {
   font-family: "Roboto", sans-serif;
@@ -401,10 +467,14 @@ body {
 .seven .card .card-body .cardText a {
   font-family: "Roboto", sans-serif;
   color: #555;
-}
-.seven .card .card-body .cardText a:hover {
-  color: rgb(255, 48, 91);
   transition: color 0.5s ease-in-out;
+}
+.seven .card .card-body:hover h3 {
+  font-size: 30px;
+  color: rgb(255, 48, 91);
+}
+.seven .card .card-body:hover a {
+  color: rgb(255, 48, 91);
 }
 
 .eight {
@@ -450,5 +520,6 @@ body {
 .nine p span:hover {
   color: rgb(255, 48, 91);
   cursor: pointer;
+  font-size: 20px;
   transition: 1s ease-in-out;
 }/*# sourceMappingURL=style.css.map */

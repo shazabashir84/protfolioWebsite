@@ -118,19 +118,22 @@ $button-margin: 0 10px 0 0;
                     }
 
                 }
-                .typewritter{
+
+                .typewritter {
+
                     // background-color: white;
-                    .content{
-                        h4{
+                    .content {
+                        h4 {
                             font-size: 26px;
                             text-transform: capitalize;
                             color: #fff;
                             font-weight: 100;
-                            
+
                         }
                     }
 
                 }
+
                 // .typewritter {
                 //     h4 {
                 //         font-size: 60px;
@@ -435,7 +438,7 @@ $button-margin: 0 10px 0 0;
     padding: $padding-cont;
 
     .fourHeader {
-        margin: 0 0 40px;
+        margin: 0 0 20px;
         // padding: 0 0 30px;
 
         h2 {
@@ -455,20 +458,32 @@ $button-margin: 0 10px 0 0;
 
         }
 
-        .buttonSection {
+        .filter-buttons {
             margin: 0 0 40px;
             text-align: center;
+            // background-color: #333;
+            margin: 10px 0 0 0;
 
-            ul {
+            button {
                 font-family: $font-para;
                 font-size: 16px;
                 list-style: none;
+                transition: all 0.5s ease-in-out;
+                border-radius: 50px;
 
                 &:hover {
-                    color: $color-red;
-                    transition: all 0.5s ease-in-out;
+                    color: white;
+                    background: $color-red;
+                    opacity: 0.5;
                 }
             }
+
+            .active {
+                color: white;
+                background: $color-red;
+                opacity: 0.5;
+            }
+
 
         }
 
@@ -482,6 +497,8 @@ $button-margin: 0 10px 0 0;
                 width: 100%;
                 height: auto;
                 position: relative;
+                border-radius: 15px;
+
 
             }
 
@@ -495,6 +512,8 @@ $button-margin: 0 10px 0 0;
                 opacity: 0;
                 z-index: 333;
                 padding: 15px;
+                border-radius: 15px;
+
 
                 i {
                     color: $color-red;
@@ -509,6 +528,11 @@ $button-margin: 0 10px 0 0;
         }
 
     }
+
+    .hidden {
+        display: none;
+    }
+
 
 
 }
@@ -577,69 +601,114 @@ $button-margin: 0 10px 0 0;
         }
     }
 
-    .crouselSection {
+    .swiper {
+        width: 600px;
+        height: 300px;
 
-        .cardSix {
-            background-color: #f9f9f9;
-            border-radius: 10px;
-            padding: 15px;
+    }
 
-            .triangle {
-                .imgCont {
-                    padding: 15px;
+    .carouselSix {
+        .carouselItems {
+
+            .cardSix {
+                border-radius: 15px;
+                padding: 20px;
+
+
+                // width: fit-content;
+
+                background: #f9f9f9;
+                border: #dc354624 solid 1px;
+
+
+
+
+                // .triangle {}
+
+                .card-image {
+                    margin: 0 20px;
+
 
                     img {
                         width: 100%;
                         border-radius: 50%;
+                    }
+
+
+
+                }
+
+                .cardBody {
+                    .cardTitle {
+                        font-family: $font-header;
+                        color: $color-red;
+                        text-transform: capitalize;
+                        margin: 0 0 10px;
+                        opacity: 0.7;
 
                     }
+
+                    .location {
+                        margin: 0 0 10px;
+                        color: $color-para;
+                    }
+
+                    .cardTxt {
+                        margin: 0 0 15px;
+                        font-family: $font-para;
+                        color: $color-para;
+
+
+                    }
+
+                    .cardTxt::after {
+                        content: " ★★★★★☆";
+                        color: #ffcc00;
+                        /* gold color for stars */
+                        font-size: 1.2em;
+                        margin-left: 8px;
+                        display: block;
+                    }
+
+                }
+
+                &:hover .cardTitle {
+                    color: $color-red;
+                    font-size: 30px;
+                    transition: all 2s ease;
+
                 }
             }
 
 
+
         }
+
+        .swiper-pagination-bullets {
+            color: $color-red;
+            height: 13px;
+            width: 13px;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: darken($color-red, 10%); // Active bullet color
+        }
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: $color-red;
+            opacity: 0.5;
+            height: 25px;
+            width: 25px;
+        }
+
     }
 
-    // .crouselSection {
-    //     .cardSix {
-    //         background-color: #f9f9f9;
-    //         position: relative;
-    //         z-index: 1;
-    //         // padding: 15px;
-
-    //         .triangle {
-    //             position: absolute;
-    //             width: 0;
-    //             height: 0;
-    //             border-style: solid;
-    //             z-index: 2;
-    //             border-width: 0 0 150px 160px;
-    //             border-color: transparent transparent transparent #ff305b;
-    //             border-radius: 5px;
-    //         }
-    //     //      .imgCont {
-    //     //     position: static; // Remove absolute so it stacks naturally
-    //     //     z-index: 3;
-    //     //     img {
-    //     //         border-radius: 50%;
-    //     //         width: 120px; // Example size
-    //     //         height: 120px;
-    //     //         object-fit: cover;
-    //     //     }
-    //     // }
-    //         // .imgCont {
-    //         //                         position: absolute;
-    //         //         z-index: 3;
-
-    //         //     img {
-    //         //         border-radius: 50%;
-
-    //         //     }
-    //         // }
-    //     }
-    // }
-
 }
+
+
+
 
 
 .seven {
@@ -673,6 +742,7 @@ $button-margin: 0 10px 0 0;
                     font-size: 24px;
                     margin: 0 0 15px;
                     text-transform: capitalize;
+                    transition: 0.5s;
                 }
 
                 p {
@@ -685,12 +755,19 @@ $button-margin: 0 10px 0 0;
                 a {
                     font-family: $font-para;
                     color: $color-para;
+                    transition: color 0.5s ease-in-out;
 
-                    &:hover {
-                        color: $color-red;
-                        transition: color 0.5s ease-in-out;
-                    }
+
                 }
+            }
+
+            &:hover h3 {
+                font-size: 30px;
+                color: $color-red;
+            }
+
+            &:hover a {
+                color: $color-red;
             }
 
         }
@@ -752,6 +829,7 @@ $button-margin: 0 10px 0 0;
         &:hover {
             color: $color-red;
             cursor: pointer;
+            font-size: 20px;
             transition: 1s ease-in-out;
         }
     }
